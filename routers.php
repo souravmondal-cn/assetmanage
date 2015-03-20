@@ -5,8 +5,7 @@ use \core\router,
     \helpers\url;
 
 //define routes
-Router::any('', '\controllers\welcome@index');
-Router::any('/subpage', '\controllers\welcome@subpage');
+Router::any('', '\controllers\User@login');
 
 //if no route found
 Router::error('\core\error@index');
